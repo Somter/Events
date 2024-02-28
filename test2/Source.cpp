@@ -90,7 +90,7 @@ DWORD WINAPI AddTime(LPVOID lp)
 		GetLocalTime(&time);
 
 		TCHAR buff[50];
-		_stprintf_s(buff, _T("%02d:%02d:%02d"), time.wHour, time.wMinute, time.wSecond);	
+		_stprintf_s(buff, _T("%02d:%02d:%02d"), time.wHour, time.wMinute, time.wSecond);		
 		SetWindowText(hEdit, buff);
 		Sleep(1000);
 	}
